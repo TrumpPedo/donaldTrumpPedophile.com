@@ -16,13 +16,13 @@
 			window.locationData = {
 				region_name: "Florida"
 			};
-			$.ajax({
-			  	url: "https://freegeoip.app/json/",
-			  	async: false
-			}).done(function(data) {
-			  	window.locationData = data;
-			  	$('#state').html(data.region_name);
-			});
+			// $.ajax({
+			//   	url: "https://freegeoip.app/json/",
+			//   	async: false
+			// }).done(function(data) {
+			//   	window.locationData = data;
+			//   	$('#state').html(data.region_name);
+			// });
 		</script>
 	</head>
 
