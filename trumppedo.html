@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175470315-1"></script>
+
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-175470315-1');
+		</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<script>
+			window.locationData = {
+				region_name: "Florida"
+			};
+			$.ajax({
+			  	url: "https://freegeoip.app/json/",
+			  	async: false
+			}).done(function(data) {
+			  	window.locationData = data;
+			  	$('#state').html(data.region_name);
+			});
+		</script>
+	</head>
+
+	<body>
+		<h1 style="text-align: center;">Donald Trump is accused of PEDOPHILIA</h1>
+
+		<p>It is alleged that, in 1993 Donald Trump raped a 13 year old girl, Katie Johnson, at an Epstein party in Manhattan. This accusation comes from the woman who says she was raped, along with TWO independent sworn affidavits with one being from a known Epstein employee! Don't believe me? Have a look:</p>
+
+		<p>
+			<embed src="https://drive.google.com/viewerng/
+	viewer?embedded=true&url=https://s3-us-west-1.amazonaws.com/donaldtrumppedophile.com/KatieJohnsonAccusation.pdf" width="800" height="375">
+			</embed>
+		</p>
+
+		<p>There's another affidavit from a friend of Katie Johnson that swears Katie told her about the rape when it allegedly happened in 1993.</p>
+
+		<p>Trump is, and has always been a <strong>powerful</strong> man. He may have silenced Katie Johnson, and now he's trying to silence <strong>YOU</strong> by taking away your right to vote by mail. A right Americans have enjoyed since the Civil War. You can have your voice heard as an American though if you follow these basic steps:</p>
+
+		<div id="localSteps"></div>
+	    <script> 
+	    	$(function(){
+	      		$("#localSteps").load(window.locationData.region_name + ".html"); 
+	    	});
+	    </script> 
+
+		<p>Not from <nobr id="state">Florida</nobr>? 
+			<a href="https://www.vote.org/absentee-voting-rules/">Click Here</a>.
+		</p>
+	</body>
+
+</html>
